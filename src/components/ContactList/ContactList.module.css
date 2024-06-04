@@ -1,0 +1,7 @@
+.contactsOrder {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
