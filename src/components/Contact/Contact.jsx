@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import clsx from 'clsx';
 import styles from './Contact.module.css';
 import { HiUser, HiPhone } from 'react-icons/hi';
-import { deleteContact } from '../../redux/contactsSlice';
+import { deleteContact } from '../../redux/contactsOps';
 
 const Contact = ({ contact }) => {
   const dispatch = useDispatch();
