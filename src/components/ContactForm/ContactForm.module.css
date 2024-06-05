@@ -2,10 +2,12 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border: 1px solid black;
     border-radius: 10px;
     padding: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: aliceblue;
+    width: fit-content;
 }
 
 .inputSection {
@@ -13,9 +15,48 @@
     flex-direction: column;
     gap: 10px;
     font-size: 20px;
+    outline: none;
 }
 
 .inputBtn {
-    border: 1px solid black;
+    outline: none;
     font-size: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: #233142;
+    color: aliceblue;
+}
+
+.inputBtn:hover,
+.inputBtn:focus {
+    background-color: #455d7a;
+}
+
+
+.inputBtn:active {
+    box-shadow: none;
+}
+
+.nameBox {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.inputField {
+    width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  filter: drop-shadow(1px 1px 1px lightgrey);
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .inputForm {
+        gap: 20px;
+    }
+
+    .inputSection {
+        gap: 20px;
+    }
 }

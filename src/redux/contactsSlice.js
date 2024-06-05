@@ -61,4 +61,4 @@ export const selectFilteredContacts = createSelector(
    }
   )
 
-export default contactsSlice;
+  export const contactsReducer = contactsSlice.reducer;

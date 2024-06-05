@@ -1,22 +1,44 @@
 .contactContainer {
     display: flex;
-    gap:50px;
+    gap: 5px;
     justify-content: space-between;
     border: 1px solid black;
     border-radius: 10px;
     padding: 20px;
+    background-color: aliceblue;
 }
 
 .nameBox {
     display: flex;
     align-items: center;
-    gap:10px;
+    gap:5px;
 }
 
 .nameSize {
-    font-size: 20px;
+    font-size: 12px;
+    text-wrap: wrap;
+    word-break:break-all;
 }
 
 .buttonFrame {
-    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: #233142;
+    color: aliceblue;
+}
+
+.buttonFrame:hover,
+.buttonFrame:focus {
+    background-color: #455d7a;
+    outline: none;
+    border: 1px solid #455d7a;
+}
+
+.buttonFrame:active {
+    box-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+    .nameSize {
+        font-size: 20px;
+    }
 }
